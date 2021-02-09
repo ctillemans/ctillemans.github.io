@@ -1,1 +1,14 @@
-$ui-orange= 	#fc453a;
+// colors
+
+$ui-orange: #fc673a;
+$ui-blue: #007392;
+$off-black: #333131;
+
+// breakpoints
+$breakpoints: (
+  'xs': 0px,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1280px,
+  'xl': 1920px,
+) !default;
