@@ -1,0 +1,63 @@
+// Styles for Mobile nav
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  height: 100vh;
+  background: white;
+  transform: translateX(-100%);
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  &__container {
+    &--open {
+      transform: translateX(0);
+    }
+  }
+  &__content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    display: flex;
+    & h2 {
+      color: $ui-orange;
+      margin-top: 0;
+      padding: 1rem;
+      border: 2px solid $ui-orange;
+    }
+  }
+}
+.linklist {
+  margin-top: 3rem;
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-item {
+    margin: 2rem 0;
+    & a {
+      color: $off-black;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        color: $black-hover;
+      }
+    }
+  }
+}
+
+// styles for regular nav
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  width: 100vw;
+  height: 80px;
+  background: white;
+  z-index: 1000;
+}

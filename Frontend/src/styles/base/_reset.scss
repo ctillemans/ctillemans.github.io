@@ -32,6 +32,10 @@ main {
   display: block;
 }
 
+ul {
+  margin: 0;
+  padding-inline-start: 0;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -75,6 +79,8 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: $off-black;
 }
 
 /**
@@ -349,3 +355,5 @@ template {
 [hidden] {
   display: none;
 }
+
+// additional base styling rule

@@ -1,7 +1,14 @@
 import React from 'react';
+import MobileNav from './MobileNav';
+import NavBar from './NavBar';
 
 const Layout = ({ children, ...props }) => {
-  return <div>{children}</div>;
+  return (
+    <>
+      <NavBar />
+      {children}
+    </>
+  );
 };
 
 export default Layout;
