@@ -1,0 +1,17 @@
+.header {
+  min-height: 85vh;
+  background-color: $ui-orange;
+
+  &__title {
+    font-size: 10rem;
+    color: white;
+  }
+  &__description {
+    margin-top: -5rem;
+    width: 50%;
+    p {
+      color: $off-black;
+      font-size: 2em;
+    }
+  }
+}

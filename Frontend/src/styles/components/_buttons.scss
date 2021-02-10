@@ -1,0 +1,14 @@
+button {
+  outline: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid $off-black;
+  font-size: 2rem;
+  border-radius: 50px;
+  &:hover {
+    background: $off-black;
+    color: white;
+  }
+}
