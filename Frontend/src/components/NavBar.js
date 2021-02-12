@@ -6,20 +6,20 @@ import { Link } from 'gatsby';
 function NavBar() {
   const linkList = [
     {
-      title: 'home',
-      path: '#',
+      title: 'Home',
+      path: '/',
     },
     {
-      title: 'The Work',
-      path: '#',
+      title: 'About',
+      path: '/about',
     },
     {
-      title: 'Experience',
-      path: '#',
+      title: 'Work',
+      path: '/portfolio',
     },
     {
       title: 'Contact',
-      path: '#',
+      path: '/contact',
     },
   ];
   const [open, setOpen] = useState(false);

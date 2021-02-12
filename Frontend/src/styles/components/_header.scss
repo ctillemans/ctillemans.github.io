@@ -1,7 +1,21 @@
 .header {
+  padding-top: 80px;
   min-height: 85vh;
   background-color: $ui-orange;
   width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    .button--cta {
+      width: 200px;
+    }
+  }
+
   &__title {
     font-size: 10rem;
     color: white;
@@ -13,5 +27,11 @@
       color: $off-black;
       font-size: 2em;
     }
+  }
+  &__right {
+    padding: 5rem;
+    height: 500px;
+    width: 500px;
+    background: white;
   }
 }

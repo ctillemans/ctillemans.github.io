@@ -1,0 +1,10 @@
+.main-bio {
+  width: 100vw;
+  padding-top: 80px;
+  &__technologies {
+    display: flex;
+    min-height: 300px;
+    width: 100%;
+    border: 2px solid $ui-orange;
+  }
+}
