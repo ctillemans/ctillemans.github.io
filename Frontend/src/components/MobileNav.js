@@ -26,9 +26,6 @@ const MobileNav = ({ open }) => {
         className={`mobile-nav mobile-nav__container ${open ? 'mobile-nav__container--open' : ''}`}
       >
         <div className='mobile-nav__content'>
-          <div className='mobile-nav__logo'>
-            <h2>Cass </h2>
-          </div>
           <div className='mobile-nav__linklist-container linklist linklist__container'>
             <ul className='linklist__list'>
               {linkList.map((linkItem) => {
