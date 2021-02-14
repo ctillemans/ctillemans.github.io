@@ -1,0 +1,40 @@
+.main-bio {
+  width: 100vw;
+  padding-top: 80px;
+
+  &__technologies {
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px solid $ui-orange;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__tools-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__tool {
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem 4rem;
+    flex: 1 1 80px;
+    font-size: 1.3rem;
+    @include breakpoint(lg) {
+      flex: 1 1 150px;
+    }
+    & i {
+      margin-right: 10px;
+      color: $ui-orange;
+      &.sanity:before {
+        content: 'S';
+        font-size: 2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// colors
+
+$ui-orange: #fc673a;
+$ui-blue: #007392;
+$off-black: #333131;
+$black-hover: #6a6a6a;
+
+// breakpoints
+$breakpoints: (
+  'xs': 0px,
+  'sm': 700px,
+  'md': 960px,
+  'lg': 1280px,
+  'xl': 1920px,
+) !default;
