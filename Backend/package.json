@@ -1,0 +1,33 @@
+{
+  "name": "mypersonalwebsite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "My portfolio page to display recent work and share a little bit about myself",
+  "main": "package.json",
+  "author": "Cassidy Tillemans <cassidybtillemans@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.3.6",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.3.3",
+    "@sanity/default-layout": "^2.3.6",
+    "@sanity/default-login": "^2.2.6",
+    "@sanity/desk-tool": "^2.3.6",
+    "@sanity/vision": "^2.2.6",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctillemans/ctillemans.github.io.git"
+  }
+}

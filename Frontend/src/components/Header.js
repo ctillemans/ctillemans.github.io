@@ -19,7 +19,7 @@ const Header = () => {
             </div>
           </div>
           <div className='col-12 col-lg-6 '>
-            <div className='header__right'></div>
+            <div className='header__right'>Placeholder for image of me</div>
           </div>
         </div>
       </div>

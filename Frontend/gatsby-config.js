@@ -4,6 +4,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: '4n8z33w1',
+        dataset: 'production',
+      },
+    },
     // {
     //   resolve: `gatsby-source-wordpress`,
     //   options: {
