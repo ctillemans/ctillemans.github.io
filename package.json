@@ -4,6 +4,9 @@
   "description": "My portfolio page to display recent work and share a little bit about myself.",
   "main": "index.js",
   "scripts": {
+    "start:client": "npm run start --prefix backend",
+    "start:sanity": "npm run start --prefix frontend",
+    "start:dev": "npm run start:client & npm run start:sanity",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

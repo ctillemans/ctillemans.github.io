@@ -1,6 +1,6 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
-import '../../public/static/devicon-master/devicon.min.css';
+// import '../../public/static/devicon-master/devicon.min.css';
 
 const about = () => {
   const tools = [
