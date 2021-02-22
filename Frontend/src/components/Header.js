@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
   return (
     <div className='header'>
-      <div className='header__content'>
-        <div className='row'>
+      <div className='header__content grid-container'>
+        <div className='grid-container__row'>
           <div className='col-12 col-lg-6'>
             <div className='row'>
               <div className='header__text'>

@@ -28,7 +28,7 @@ function NavBar() {
       <div className='navbar'>
         <div className='navbar__content'>
           <div className='navbar__logo'>
-            <h2>Cass </h2>
+            <h1>Cass </h1>
           </div>
           <ul className='navbar__linkList'>
             {linkList.map((linkItem) => {

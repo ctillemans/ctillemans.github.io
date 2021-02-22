@@ -14,12 +14,13 @@ h6 {
   font-weight: 700;
 }
 h1 {
-  color: $ui-orange;
-  font-size: 3.2rem;
+  // color: $ui-orange;
+  // font-size: 3.2rem;
   // sample to use breakpoint mixin
   // @include breakpoint(md) {
   //   font-size: 10rem;
   // }
+  @include responsive-font-size($h1-font-size-map);
 }
 h2 {
   font-size: 2.4rem;
@@ -31,7 +32,7 @@ h4 {
   font-size: 1.6rem;
 }
 p {
-  font-size: 1.3rem;
+  @include responsive-font-size($p-font-size-map);
 }
 
 // font-family: 'Abril Fatface', cursive;
