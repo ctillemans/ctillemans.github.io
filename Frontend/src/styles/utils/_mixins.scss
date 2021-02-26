@@ -12,6 +12,7 @@
 // }
 
 // Grid Mixins
+
 @mixin breakpoint($breakpoint) {
   @if ($breakpoint ==0) {
     @content;

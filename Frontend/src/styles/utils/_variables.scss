@@ -1,31 +1,32 @@
 // colors
 
-$ui-orange: #fc673a;
-$ui-blue: #007392;
+$ui-orange: #d46752;
+$ui-green: #2a4446;
 $off-black: #333131;
 $black-hover: #6a6a6a;
+$off-white: #f7e6c6;
 
 // grid variables
 $grid_cols: 12;
 
 // Breakpoint variables
-$breakpoint_xs: 0;
-$breakpoint_sm: 576;
-$breakpoint_md: 768;
-$breakpoint_lg: 922;
-$breakpoint_xl: 1200;
-$breakpoint_xxl: 1400;
+$xs: 0 * 1px;
+$sm: 576 * 1px;
+$md: 768 * 1px;
+$lg: 922 * 1px;
+$xl: 1200 * 1px;
+$xxl: 1400 * 1px;
 
 //
 // breakpoints
 // using the same breakpoints as bootstrap to match media queries to the grid system
 $breakpoints-map: (
   '': 0,
-  '-sm': $breakpoint_sm * 1px,
-  '-md': $breakpoint_md * 1px,
-  '-lg': $breakpoint_lg * 1px,
-  '-xl': $breakpoint_xl * 1px,
-  '-xxl': $breakpoint_xxl * 1px,
+  '-sm': $sm,
+  '-md': $md,
+  '-lg': $lg,
+  '-xl': $xl,
+  '-xxl': $xxl,
 ) !default;
 
 // font-size variables and maps
@@ -33,20 +34,20 @@ $breakpoints-map: (
 // make more specific queries as needed in each map (i.e. $p-font-size-map)
 $font-size-breakpoints: (
   '': 0,
-  'sm': $breakpoint_sm * 1px,
-  'md': $breakpoint_md * 1px,
-  'lg': $breakpoint_lg * 1px,
-  'xl': $breakpoint_xl * 1px,
-  'xxl': $breakpoint_xxl * 1px,
+  'sm': $sm,
+  'md': $md,
+  'lg': $lg,
+  'xl': $xl,
+  'xxl': $xxl,
 ) !default;
 
 $p-font-size-map: (
-  '': 1.3,
-  'sm': 1.6,
-  'md': 1.7,
-  'lg': 1.8,
-  'xl': 1.9,
-  'xxl': 2,
+  '': 1.5,
+  'sm': 1.5,
+  'md': 1.5,
+  'lg': 1.5,
+  'xl': 1.6,
+  'xxl': 1.7,
 );
 $h1-font-size-map: (
   '': 2,

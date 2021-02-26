@@ -1,13 +1,13 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 
 const ProjectList = ({ projects }) => {
   return (
     <>
-      <div className=''>
-        <h1>TEST</h1>
-        <div className=''>
+      <div className='grid-container--fluid projects-list'>
+        <div className='grid-container__row justify-center '>
           {projects.map((project) => {
-            return <div className=''>{project.projectTitle}</div>;
+            return <ProjectCard project={project} />;
           })}
         </div>
       </div>

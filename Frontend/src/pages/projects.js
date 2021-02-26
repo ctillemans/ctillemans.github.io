@@ -1,10 +1,12 @@
 import React from 'react';
+import PageHeader from '../components/PageHeader';
 import ProjectList from '../components/ProjectList';
 
-const projects = ({ data }) => {
+export default function projects({ data }) {
   console.log(data.projects.nodes);
   return (
     <>
+      <PageHeader text='Projects' textPosition='center' bgColor='off-white' />
       {/* Projects Header -- make a more reusable header with image option, text, layout options, etc.*/}
 
       {/* projects filter-- filter by technology here*/}
@@ -12,7 +14,7 @@ const projects = ({ data }) => {
       <ProjectList projects={data.projects.nodes} />
     </>
   );
-};
+}
 
 export const query = graphql`
   query projectsQuery {
@@ -37,7 +39,5 @@ export const query = graphql`
     }
   }
 `;
-
-export default projects;
 
 // run query here to get projects data and then pass it to  the projects list component

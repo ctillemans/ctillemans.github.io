@@ -1,0 +1,20 @@
+.page-header {
+  &__container {
+    display: flex;
+    height: 100vh;
+    &.bg {
+      &--green {
+        background: $ui-green;
+        color: white;
+      }
+      &--orange {
+        background: $ui-orange;
+        color: white;
+      }
+      &--off-white {
+        background: $off-white;
+        color: $ui-orange;
+      }
+    }
+  }
+}

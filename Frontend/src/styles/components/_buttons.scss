@@ -4,11 +4,12 @@ button {
   margin-top: 2rem;
   padding: 1rem;
   background-color: transparent;
-  border: 2px solid $off-black;
+  border: 2px solid $ui-orange;
   font-size: 2rem;
   border-radius: 50px;
+  color: $ui-orange;
   &:hover {
-    background: $off-black;
+    background: $ui-orange;
     color: white;
   }
 }

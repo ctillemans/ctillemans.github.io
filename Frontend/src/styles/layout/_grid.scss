@@ -5,9 +5,8 @@
 // column classes
 
 .grid-container {
-  max-width: $breakpoint_lg;
+  max-width: 90vw;
   margin: 0 auto;
-
   &--fluid {
     margin: 0;
     max-width: 100%;
@@ -16,7 +15,17 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    &.justify-center {
+      justify-content: center;
+    }
+    &.center {
+      justify-content: center;
+      align-items: center;
+    }
   }
+}
+.flex {
+  display: flex;
 }
 
 @each $modifier, $breakpoint in $breakpoints-map {

@@ -15,7 +15,7 @@ function NavBar() {
     },
     {
       title: 'Work',
-      path: '/portfolio',
+      path: '/projects',
     },
     {
       title: 'Contact',
@@ -28,13 +28,30 @@ function NavBar() {
       <div className='navbar'>
         <div className='navbar__content'>
           <div className='navbar__logo'>
-            <h1>Cass </h1>
+            <Link to='/'>
+              <div className='logo'>
+                <div className='letter top-left'>
+                  <h2>C</h2>
+                </div>
+                <div className='letter top-right'>
+                  <h2>T</h2>
+                </div>
+                <div className='letter bottom-right'>
+                  <h2>C</h2>
+                </div>
+                <div className='letter bottom-left'>
+                  <h2>T</h2>
+                </div>
+              </div>
+            </Link>
           </div>
           <ul className='navbar__linkList'>
             {linkList.map((linkItem) => {
               return (
                 <li className='navbar__list-item'>
-                  <Link to={linkItem.path}>{linkItem.title}</Link>
+                  <Link to={linkItem.path} activeClassName='navbar__list-item--active'>
+                    {linkItem.title}
+                  </Link>
                 </li>
               );
             })}

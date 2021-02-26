@@ -6,6 +6,7 @@
   "scripts": {
     "start:client": "npm run start --prefix backend",
     "start:sanity": "npm run start --prefix frontend",
+    "sanity:graphql": " cd backend && sanity grapql deploy",
     "start:dev": "npm run start:client & npm run start:sanity",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

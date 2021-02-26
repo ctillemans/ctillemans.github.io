@@ -1,12 +1,12 @@
 import React from 'react';
 import NavBar from './NavBar';
 
-const Layout = ({ children, ...props }) => {
+const Layout = ({ children }) => {
   return (
-    <>
+    <div>
       <NavBar />
-      {children}
-    </>
+      <div style={{ paddingTop: '80px' }}>{children}</div>
+    </div>
   );
 };
 
