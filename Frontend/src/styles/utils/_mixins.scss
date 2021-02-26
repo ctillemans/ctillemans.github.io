@@ -1,12 +1,58 @@
 // https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
 
+// @mixin breakpoint($breakpoint) {
+//   @if map-has-key($breakpoints-map, $breakpoint) {
+//     @media (min-width: map-get($breakpoints-map, $breakpoint)) {
+//       @content;
+//     }
+//   } @else {
+//     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+//         + "Available breakpoints are: #{map-keys($breakpoints-map)}.";
+//   }
+// }
+
+// Grid Mixins
+
 @mixin breakpoint($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
+  @if ($breakpoint ==0) {
+    @content;
+  } @else {
+    @media screen and (min-width: $breakpoint) {
       @content;
     }
-  } @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+@mixin create-cols($modifier, $grid_cols, $breakpoint) {
+  @include breakpoint($breakpoint) {
+    @for $i from 1 through $grid_cols {
+      .col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid_cols/ $i)) * 1%;
+      }
+    }
+  }
+}
+
+// Typography mixins
+
+@mixin responsive-font-size($fs-map, $fs-breakpoints: $font-size-breakpoints) {
+  @each $fs-breakpoint, $font-size in $fs-map {
+    @if ($fs-breakpoint == '') {
+      font-size: $font-size * 1rem;
+    } @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+
+      @include breakpoint($fs-breakpoint) {
+        font-size: $font-size * 1rem;
+      }
+    }
+  }
+}
+
+// paragraphs with media queries
+
+// spacing mixins
+// --padding
+// --margins

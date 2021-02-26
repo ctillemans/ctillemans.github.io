@@ -1,17 +1,17 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
-import '../../public/static/devicon-master/devicon.min.css';
+// import '../../public/static/devicon-master/devicon.min.css';
 import Technologies from '../components/Technologies';
 
-const about = ({ data }) => {
+export default function about({ data }) {
   console.log(data);
   return (
     <>
       {/* small bio */}
       <div className=' main-bio'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-md-4 '>
+        <div className='grid-container'>
+          <div className='grid-container__row'>
+            <div className='col-12 col-lg-6 '>
               <div className='main-bio__card'>
                 <div className='main-bio__card-title'>
                   <h1>About Me</h1>
@@ -40,7 +40,7 @@ const about = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className='col-12 col-md-8 col'>
+            <div className='col-12 col-lg-6 col'>
               <Technologies tools={data.tools} />
             </div>
           </div>
@@ -50,9 +50,7 @@ const about = ({ data }) => {
       {/* some images */}
     </>
   );
-};
-
-export default about;
+}
 
 export const query = graphql`
   query technologiesQuery {

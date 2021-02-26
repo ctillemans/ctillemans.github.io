@@ -1,6 +1,14 @@
 .main-bio {
   width: 100vw;
-  padding-top: 80px;
+  padding: 2rem;
+  background: $off-white;
+  min-height: 80vhvh;
+  &__card {
+    padding: 2rem;
+  }
+  &__card-title {
+    color: $ui-orange;
+  }
 
   &__technologies {
     margin-top: 3rem;
@@ -8,7 +16,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 5px solid $ui-orange;
+    border: 5px solid $off-black;
     align-items: center;
     justify-content: center;
   }

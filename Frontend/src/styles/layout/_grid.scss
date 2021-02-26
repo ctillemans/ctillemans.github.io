@@ -1,0 +1,33 @@
+// container and flex container classes
+
+// row classes
+
+// column classes
+
+.grid-container {
+  max-width: 90vw;
+  margin: 0 auto;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+  &__row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    &.justify-center {
+      justify-content: center;
+    }
+    &.center {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.flex {
+  display: flex;
+}
+
+@each $modifier, $breakpoint in $breakpoints-map {
+  @include create-cols($modifier, $grid_cols, $breakpoint);
+}

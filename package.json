@@ -1,0 +1,23 @@
+{
+  "name": "ctillemans.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio page to display recent work and share a little bit about myself.",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "npm run start --prefix backend",
+    "start:sanity": "npm run start --prefix frontend",
+    "sanity:graphql": " cd backend && sanity grapql deploy",
+    "start:dev": "npm run start:client & npm run start:sanity",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctillemans/ctillemans.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctillemans/ctillemans.github.io/issues"
+  },
+  "homepage": "https://github.com/ctillemans/ctillemans.github.io#readme"
+}
