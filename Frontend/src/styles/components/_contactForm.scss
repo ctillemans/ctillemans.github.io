@@ -1,0 +1,92 @@
+.contact-form {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    position: relative;
+    margin: 2rem 0;
+    width: 100%;
+    height: 5rem;
+    border: 1px solid $ui-orange;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+.select-box {
+  &__wrapper {
+    cursor: pointer;
+    align-self: flex-start;
+    width: 50%;
+    background: $ui-orange;
+    color: white;
+  }
+  &__options {
+    color: $off-black;
+    &--open {
+      display: block;
+    }
+    background: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid $ui-orange;
+  }
+  &__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__arrow {
+    height: 15px;
+    width: 15px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      width: 2px;
+      height: 100%;
+    }
+    &:before {
+      left: 5px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      left: -5px;
+      transform: rotate(-45deg);
+    }
+  }
+  &__options {
+    :nth-child(1) {
+      margin-top: 0;
+    }
+    font-size: 1.8rem;
+    width: 100%;
+    z-index: 999;
+  }
+  &__option {
+    cursor: pointer;
+    margin: 2rem 0;
+    &:hover {
+      color: $ui-orange;
+    }
+  }
+}
