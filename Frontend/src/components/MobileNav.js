@@ -4,20 +4,20 @@ import { Link } from 'gatsby';
 const MobileNav = ({ open }) => {
   const linkList = [
     {
-      title: 'home',
-      path: '#',
+      title: 'Home',
+      path: '/',
     },
     {
-      title: 'The Work',
-      path: '#',
+      title: 'About',
+      path: '/about',
     },
     {
-      title: 'Experience',
-      path: '#',
+      title: 'Work',
+      path: '/projects',
     },
     {
       title: 'Contact',
-      path: '#',
+      path: '/contact',
     },
   ];
   return (

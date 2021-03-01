@@ -14,11 +14,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "gatsby": "^2.31.1",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-source-sanity": "^6.0.5",
     "gatsby-source-wordpress": "^4.0.1",
+    "gsap": "^3.6.0",
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
