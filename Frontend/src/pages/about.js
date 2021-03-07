@@ -11,7 +11,7 @@ export default function about({ data }) {
       <div className=' main-bio'>
         <div className='grid-container'>
           <div className='grid-container__row'>
-            <div className='col-12 col-lg-6 '>
+            <div className='col-12 col-lg-4 '>
               <div className='main-bio__card'>
                 <div className='main-bio__card-title'>
                   <h1>About Me</h1>
@@ -40,7 +40,7 @@ export default function about({ data }) {
                 </div>
               </div>
             </div>
-            <div className='col-12 col-lg-6 col'>
+            <div className='col-12 col-lg-8 col'>
               <Technologies tools={data.tools} />
             </div>
           </div>
