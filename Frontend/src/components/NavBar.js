@@ -37,10 +37,10 @@ function NavBar() {
                   <h2>T</h2>
                 </div>
                 <div className='letter bottom-right'>
-                  <h2>C</h2>
+                  <h2>T</h2>
                 </div>
                 <div className='letter bottom-left'>
-                  <h2>T</h2>
+                  <h2>C</h2>
                 </div>
               </div>
             </Link>

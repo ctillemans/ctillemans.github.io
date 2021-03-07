@@ -66,7 +66,6 @@ const Technologies = ({ tools }) => {
     <>
       <div className='main-bio__technologies'>
         <h2>Toolkit</h2>
-
         <ul className='main-bio__tools-list'>
           {tools.nodes.map((tool) => {
             return (

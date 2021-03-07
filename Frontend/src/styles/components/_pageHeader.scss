@@ -1,11 +1,14 @@
 .page-header {
   &__container {
     display: flex;
-    height: 100vh;
+    height: 50vh;
+    .text {
+      font-size: 8rem;
+    }
     &.bg {
       &--green {
         background: $ui-green;
-        color: white;
+        color: $ui-orange;
       }
       &--orange {
         background: $ui-orange;
@@ -13,7 +16,7 @@
       }
       &--off-white {
         background: $off-white;
-        color: $ui-orange;
+        color: $off-black;
       }
     }
   }
